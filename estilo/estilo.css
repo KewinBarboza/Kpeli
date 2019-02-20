@@ -1,0 +1,375 @@
+* {
+    font-family: 'Arimo', sans-serif;
+}
+body {
+    background: #f1f1f1;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+
+/*clases de ayuda*/
+.mergin-0     { margin: 0; }
+.padding-0    { padding: 0; }
+.full-height  { height: 100%; }
+.text-blanco  { color: #FFF; }
+.color-blanco { background: #fff; }
+.azul-prim    { background: #33b6c1; }
+.absolute     { position: absolute; }
+.relative     { position: relative; }
+.sobra        { box-shadow: 0px 0px 7px 0px #b3b2b2;}
+.ocultar      {overflow: hidden;}
+.ancho-linea  {font-weight: 100}
+
+/*Pantalla Principal*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.tamaño-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+.tamaño-container .img-portada {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.titulo-principal {
+    font-size: 4em;
+    line-height: 90px;
+    color: #fff;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.bg-dark-color {
+    background: #232323;
+    height: 70px;
+    padding: 10px 50px;
+}
+.bg-dark-color-2 {
+    background: #222;
+    height: 80px;
+    padding: 10px 50px;
+}
+.nav .nav-item .nav-link {
+    color: #33b6c1;
+}
+.nav .nav-item .nav-link:hover {
+    background: rgba(2, 2, 2, 0.64);
+}
+.btn-azul{
+    border-color: currentColor;
+    border-style: solid;
+    border-width: 1px;
+    color: #24a2ab;
+    background-color: transparent;
+    border-color: #24a2ab;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+/*Card Scroll*/
+.scrolling-wrapper { 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+   
+}
+
+.scrolling-wrapper .card-scroll { 
+    display: inline-block; 
+} 
+.link-img{
+   transition: 0.5s;
+   position: relative;
+}
+
+.titulo-card-scroll{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+}
+
+.titulo{
+    padding: 30px;
+    text-align: center;
+    line-height: 15px;
+    font-weight: 200;
+}
+
+.img-logo{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+
+.img-logo:hover{
+      filter: blur(5px);
+}
+
+
+/*Card de peliculas home*/
+
+.card{
+   transition: 0.5s;
+}
+.card:hover{
+    box-shadow: 0px 0px 17px 0px #b3b2b2;
+}
+.card-img-top{
+    transition: 0.5s;
+}
+.card:hover .card-img-top{
+    transform: scale(1.01,1.01);
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 0px #111;
+}
+.btn-radius{
+    text-align: center;
+    padding: 5%;
+    border-radius: 50px;
+    background:#e8eaea;
+    margin-left: 10%;
+    transition: 0.5s;
+}
+.btn-radius:hover{
+    box-shadow: 0px 0px 7px 0px #b3b2b2;
+}
+
+.btn-radius i{
+    font-size: 15px;
+    text-align: center;
+    color:#1fb1c1;
+}
+
+
+
+
+/*Pagina 2*/
+input[type="text"]{
+    width: 190%;
+    padding: 10px;
+    border-radius: 50px;
+    border:none;
+    line-height: 5px;
+    margin-left: 120%;
+    background:#4a4a4a;
+    color: #fff;
+
+}
+input[type="text"]:hover{
+    background: #5a5a5a;
+}
+input[type="text"]:focus{
+    border-color: rgb(255, 255, 0);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075)inset, 0 0 8px rgba(255,255,255,0.6);
+    outline: 0 none;
+}
+.card-list-peliculas {
+    width: 200px;
+    height: 300px;
+    background: #000;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0,0.5);
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+}
+.card-list-peliculas .poster {
+    position: relative;
+    overflow: hidden;
+}
+.card-list-peliculas .poster:before {
+    content: '';
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.card-list-peliculas:hover .poster:before{
+    bottom: 0;
+}
+.card-list-peliculas .poster img {
+    width: 100%;
+    transition: 0.5s;
+}
+.card-list-peliculas:hover .poster img{
+    filter: blur(5px);
+    transform: translateY(-50px);
+}
+.detalles {
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+    bottom: -250px;
+    left: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 2;
+}
+.card-list-peliculas:hover .detalles{
+    bottom: 0;
+}
+.detalles h2 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.detalles h2 span {
+    font-size: 12px;
+    color: #ff9800;
+}
+.tags {
+    position: relative;
+    margin-top: 5px;
+}
+.tags span {
+    padding: 1px 3px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+}
+.tags span.fantacia {
+    background: #7206f7;
+}
+.info {
+    color: #fff;
+}
+
+.info p{
+    margin: 15px 0 10px;
+    font-size: 10px;
+}
+
+.datos{
+    position: relative;
+}
+.datos h4{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #f7f406; 
+}
+.datos p{
+    color: #fff;
+     font-size: 10px;
+
+}
+
+.datos a{
+    color: yellow;
+     font-size: 10px;
+}
+
+.datos a:hover{
+    color: #f1f1f1;
+}
+
+
+.Jumbotron-md{
+    background-image: url(../imagenes/inicio.jpg);
+    margin: 20px auto;
+}
+
+.titulo-categorias{
+    padding: 3px 0px 0px 90px;
+}
+
+.titulo-categorias span{
+    font-size: 16px;
+    color: #c7c7c7;
+}
+
+/*Pagina 3*/
+.img-jumbotron{
+    background-repeat: no-repeat;
+}
+.card-descripcion{
+    max-width: 60rem; 
+    margin: 0px auto; 
+    margin-top: -15%;
+}
+
+.card-titulo{
+    font-size: 40px;
+    font-weight: 10px;
+    padding: 10px;
+    line-height: 30px;
+
+}   
+
+.ul-descripcion{
+    padding: 0;
+    margin: 0;
+}
+
+.ul-descripcion li{
+    list-style: none;
+    float: left;
+    padding-right:  30px;
+    margin-top: 3%;
+    transition: 0.5s;
+    text-align: center;
+
+
+}
+.ul-descripcion li:hover{
+    background-color: #d6d6d67a;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.p-sinopsis{
+    /*margin-top: 15%;*/
+    margin: 15% 0% 10% 0%;
+    padding: 24px;
+
+
+}
+/*Footer*/
+.footer-titulo {
+    background: #1b1919;
+    width: 100%;
+    border-bottom: 1px solid #33b6c1;
+}
+.ul-footer {
+    background: #424242;
+    float: left;
+}
+.ul-footer li {
+    list-style: none;
+    padding-left: 120px;
+    padding: 10px;
+}
+
+.ul-footer li a:hover {
+    color: #fff;
+}
+

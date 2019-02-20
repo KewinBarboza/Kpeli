@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View3</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap\css\bootstrap-material-design.css" rel="stylesheet">
+	<link href="estilo/material-design-icons.css" rel="stylesheet" type="text/css">
+	<!--<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"> -->
+	<link href="estilo/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid"  style="background-image: url(imagenes/deadpool.jpg); background-repeat: no-repeat; background-size: cover; height: 40%;">
+	</div>
+	<div class="card bg-light card-descripcion">
+		<div class="card-body">
+			<img src="imagenes/deadpool-2G.jpg" style="float:left; margin-right: 3%;">
+			<h2 class="card-titulo">Deadpool 2</h2>
+			<ul class="ul-descripcion">
+				<li><i class="material-icons">event_note</i>Año</li>
+				<li><i class="material-icons">watch_later</i>Duracion</li>
+				<li><i class="material-icons">high_quality</i>Calida </li>
+				<li><i class="material-icons">language</i>Español/Sub </li>
+			</ul>
+			<p class="p-sinopsis">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+				<a  href="view1.html" class="btn btn-secondary"><i class="material-icons">keyboard_backspace</i></a>
+				<button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg">Trailer</button>
+				<div class="btn-group" role="group">
+					<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Descarga Drive
+					</button>
+					<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+						<a class="dropdown-item" href="#">Español 1080p</a>
+						<a class="dropdown-item" href="#">Español 720p</a>
+						<a class="dropdown-item" href="#">Sup titulos 1080p</a>
+						<a class="dropdown-item" href="#">Sup titulos 720p</a>
+					</div>
+				</div>
+
+				<div class="btn-group" role="group">
+					<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Descarga MEGA
+					</button>
+					<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+						<a class="dropdown-item" href="#">Español 1080p</a>
+						<a class="dropdown-item" href="#">Español 720p</a>
+						<a class="dropdown-item" href="#">Sup titulos 1080p</a>
+						<a class="dropdown-item" href="#">Sup titulos 720p</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--------------------------------------- MODAL- trailer -------------------------------------->
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<iframe width="820" height="545" src="https://www.youtube.com/embed/U6VMFwS2mPk?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<!--------------------------------------- MODAL- trailer - FIN  -------------------------------------->
+	<script src="js\jquery-3.2.1.slim.min.js"></script>
+	<script src="js\popper.js"></script>
+	<script src="bootstrap\js\bootstrap-material-design.js"></script>
+	<script src="js\main.js"></script>
+</body>
+</html>
